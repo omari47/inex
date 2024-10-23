@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flex</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .outer {
+            display: flex; /*very useful */
+            background: dodgerblue;
+            justify-content: center; /*Center horizontally */
+            padding: 20px;
+            /*height: 500px;*/
+
+
+        }
+
+        .inner {
+
+            background: lightpink;
+            width: 40%; /*always use a percentage so that it grows automatically depending on the device*/
+            padding: 16px;
+        }
+
+        .inner p {
+            color: darkslateblue;
+        }
+        #shout{
+            color: olivedrab;
+            font-size: 1.1em;
+        }
+        .container{
+            display: flex;
+            justify-content: space-evenly;
+            background: lightslategray;
+            padding-top: 25px;
+            padding-bottom: 25px;
+        }
+
+        .smaller{
+            width: 23%;
+            height: 120px;
+            background: #b4a0ff;
+            color: aliceblue;
+            font-size: 1.9em;
+            display: flex;
+            justify-content: center; /*horizontally*/
+            align-items: center;/*vertically*/
+        }
+
+    </style>
+</head>
+<body>
+<div class="outer">
+    <div class="inner">
+        <p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium ad <spa id="shout">aliquid corporis, deleniti deserunt,</spa> dolore dolorum eligendi est impedit nam possimus quae quas, quidem rem saepe sed sit veritatis vitae!</span><span>Ab ad delectus doloremque hic illum ipsa ipsum labore modi odio pariatur provident, quibusdam quis ratione similique sint vel vero? Aliquam enim expedita nisi, odio quaerat quibusdam ratione. Nobis, quaerat?</span><span>Aliquam assumenda earum error laboriosam natus quaerat sint totam? Corporis cumque doloremque earum explicabo in iusto magni maiores modi. A aliquid fugiat odio pariatur sequi tempore. Animi est numquam quis!</span>
+        </p> /*span tags used to modify or beautify the paragraph, the words of your choice, style*/
+    </div>
+</div>
+
+
+<div class="container"> 
+    <div class="smaller">1</div>
+    <div class="smaller">2</div>
+    <div class="smaller">3</div>
+    <div class="smaller">4</div>
+</div>
+
+</body>
+</html>
